@@ -154,25 +154,6 @@ button:hover{
     border: none;
 }
 
-@media (max-width: 768px) {
-    .banner {
-        height: 200vw;
-        padding: 1vw;
-    }
-
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .navbar ul {
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
-    }
-
-}
-
 @media (min-device-width:925 ) and (max-device-width: 926) {
     .navbar ul li a {
         font-size: 8px;
