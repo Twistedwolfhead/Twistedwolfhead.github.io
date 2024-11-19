@@ -1,0 +1,263 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(Images/1474336.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 6.25vw;
+    cursor: pointer;
+}
+.aboutImage1{
+    position: relative;
+    width: 18.75vw;
+    right: 5.208vw;
+    border-radius: 5px;
+    box-shadow: 2px 2px rgb(24, 57, 43, .50);
+}
+
+.aboutImage2{
+    position: relative;
+    width: 18.75vw;
+    left: 5.208vw;
+    border-radius: 5px;
+    box-shadow: 2px 2px rgb(24,57,43,0.50)
+}
+.parkImage{
+    position: relative;
+    width: 18.75vw;
+    border-radius: 5px;
+    box-shadow: 2px 2px rgb(24,57,43,0.50);
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.833vw;
+}
+.navbar ul li::after{
+    content: '';
+    height:3px;
+    width:0%;
+    background:#009688;
+    position:absolute;
+    left:0;
+    bottom:-10px;
+    transition:0.5s;
+}
+.navbar ul li:hover::after{
+    width:100%;
+}
+.content{
+    position:absolute;
+    width:100%;
+    top:50%;
+    transform: translateY(-50%);
+    text-align:center;
+    color:#fff;
+}
+.content h1{
+    font-size:3.385vw;
+    margin-top:80px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.content h2{
+    margin:20px auto;
+    font-weight:100;
+    line-height:25px;
+    max-width: 800px;
+    font-size: 1.2vw;
+}
+.content p{
+    margin:20px auto;
+    font-weight:100;
+    line-height:25px;
+    max-width: 800px;
+}
+
+#aboutParagraph{
+    margin:20px auto;
+    font-weight:100;
+    line-height:40px;
+    max-width: 800px;
+    max-height: 800px;
+    background-color : rgb(24, 57, 43, 45%);
+    border: 2px  rgb(24, 57, 43, 45%);
+    border-radius: 10px;
+    font-size: 1.563vw;
+    font-family: 'Times New Roman', Times, serif;
+}
+#parkParagraph{
+    margin:20px auto;
+    font-weight:100;
+    line-height:40px;
+    max-width: 800px;
+    max-height: 800px;
+    background-color: rgb(24, 57, 43, 45%);
+    border: 2px rgb(24, 57, 43, 45%);
+    border-radius: 10px;
+    font-size:1.5vw;
+    font-family: 'Times New Roman', Times, serif;
+}
+button{
+    width:200px;
+    padding: 15px 0;
+    text-align:center;
+    margin:20 px 10 px;
+    border-radius:25px;
+    font-weight:bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color:#fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    font-size: 0.85vw;
+}
+span{
+    background: #009688;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .banner {
+        height: 200vw;
+        padding: 1vw;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .navbar ul li a {
+        font-size: 8px;
+    }
+    .navbar ul li::after{
+        content: '';
+        height:3px;
+        width:0%;
+        background:#009688;
+        position:absolute;
+        left:0;
+        bottom:-5px;
+        transition:0.5s;
+    }
+    .logo {
+        width: 50px;
+    }
+    .content h1{
+        font-size:5vw;
+        margin-top:80px;
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .content h2{
+        margin:20px auto;
+        font-weight:100;
+        line-height:25px;
+        max-width: 800px;
+        font-size: 4vw;
+    }
+    .content p{
+        margin:20px auto;
+        font-weight:100;
+        line-height:25px;
+        max-width: 800px;
+        font-size: 3vw
+    }
+    
+    #aboutParagraph{
+        margin:20px auto;
+        font-weight:100;
+        line-height:40px;
+        max-width: 800px;
+        max-height: 800px;
+        background-color : rgb(24, 57, 43, 45%);
+        border: 2px  rgb(24, 57, 43, 45%);
+        border-radius: 10px;
+        font-size: 2.563vw;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    #parkParagraph{
+        margin:20px auto;
+        font-weight:100;
+        line-height:40px;
+        max-width: 800px;
+        max-height: 800px;
+        background-color: rgb(24, 57, 43, 45%);
+        border: 2px rgb(24, 57, 43, 45%);
+        border-radius: 10px;
+        font-size:2.563vw;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    button{
+        font-size: 4vw;
+    }
+
+    .aboutImage1{
+        position: relative;
+        width: 27.75vw;
+        right: 5.208vw;
+        border-radius: 5px;
+        box-shadow: 2px 2px rgb(24, 57, 43, .50);
+    }
+    
+    .aboutImage2{
+        position: relative;
+        width: 27.75vw;
+        left: 5.208vw;
+        border-radius: 5px;
+        box-shadow: 2px 2px rgb(24,57,43,0.50)
+    }
+    .parkImage{
+        position: relative;
+        width: 25.75vw;
+        border-radius: 5px;
+        box-shadow: 2px 2px rgb(24,57,43,0.50);
+    }
+}
