@@ -175,7 +175,7 @@ button:hover{
 
 @media (aspect-ratio:19.5/9) {
     .navbar ul li a {
-        font-size: 18px;
+        font-size: 8px;
     }
     .navbar ul li::after{
         content: '';
@@ -188,10 +188,10 @@ button:hover{
         transition:0.5s;
     }
     .logo {
-        width: 150px;
+        width: 50px;
     }
     .content h1{
-        font-size:15vw;
+        font-size:5vw;
         margin-top:80px;
         text-align: center;
         font-family: Georgia, 'Times New Roman', Times, serif;
@@ -201,14 +201,14 @@ button:hover{
         font-weight:100;
         line-height:25px;
         max-width: 800px;
-        font-size: 14vw;
+        font-size: 4vw;
     }
     .content p{
         margin:20px auto;
         font-weight:100;
         line-height:25px;
         max-width: 800px;
-        font-size: 13vw
+        font-size: 3vw
     }
     
     #aboutParagraph{
@@ -220,7 +220,7 @@ button:hover{
         background-color : rgb(24, 57, 43, 45%);
         border: 2px  rgb(24, 57, 43, 45%);
         border-radius: 10px;
-        font-size: 12.563vw;
+        font-size: 2.563vw;
         font-family: 'Times New Roman', Times, serif;
     }
     #parkParagraph{
@@ -232,31 +232,31 @@ button:hover{
         background-color: rgb(24, 57, 43, 45%);
         border: 2px rgb(24, 57, 43, 45%);
         border-radius: 10px;
-        font-size:12.563vw;
+        font-size:2.563vw;
         font-family: 'Times New Roman', Times, serif;
     }
     button{
-        font-size: 14vw;
+        font-size: 4vw;
     }
 
     .aboutImage1{
         position: relative;
-        width: 127.75vw;
-        right: 15.208vw;
-        border-radius: 15px;
+        width: 27.75vw;
+        right: 5.208vw;
+        border-radius: 5px;
         box-shadow: 2px 2px rgb(24, 57, 43, .50);
     }
     
     .aboutImage2{
         position: relative;
-        width: 127.75vw;
-        left: 15.208vw;
+        width: 27.75vw;
+        left: 5.208vw;
         border-radius: 5px;
         box-shadow: 2px 2px rgb(24,57,43,0.50)
     }
     .parkImage{
         position: relative;
-        width: 125.75vw;
+        width: 25.75vw;
         border-radius: 5px;
         box-shadow: 2px 2px rgb(24,57,43,0.50);
     }
