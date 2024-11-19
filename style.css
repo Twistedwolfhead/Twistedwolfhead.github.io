@@ -173,7 +173,7 @@ button:hover{
 
 }
 
-@media (aspect-ratio:19.5/9) {
+@media (min-device-width:925 ) and (max-device-width: 926) {
     .navbar ul li a {
         font-size: 8px;
     }
